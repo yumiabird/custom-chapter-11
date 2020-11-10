@@ -1,0 +1,33 @@
+---
+title: "MyFirstRMarkdown"
+author: "Mia Hargrave"
+date: "11/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r include==FALSE, echo=FALSE}
+source("coffee.R")
+```
+
+
+# Mia's coffee orders over time
+
+Mia loves her coffee. These are her favourite things to order: `r orders`
+
+It all started on `r month_1` `r day_1`, `r year_1` in `r location_1` with a `r order_1` coffee.
+
+She loves them so much that she has had `r top_cof` coffee `r top_times` times!
+
+
+### Look at all the coffee she drinks!
+
+
+```{r, echo = FALSE}
+mias_orders
+```
+
+
